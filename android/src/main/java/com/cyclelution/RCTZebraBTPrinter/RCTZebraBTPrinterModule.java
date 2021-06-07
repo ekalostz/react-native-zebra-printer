@@ -125,7 +125,7 @@ public class RCTZebraBTPrinterModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void printImport(String userPrinterSerial, String qrcode, String trackGen, String userCode, String transport, String date, Promise promise) throws Exception {
+    public void printImport(String userPrinterSerial, String qrcode, String each_qrcode, String trackGen, String userCode, String transport, String date, Promise promise) throws Exception {
         try {
 
             if (connection == null) {
