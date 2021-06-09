@@ -140,7 +140,7 @@ public class RCTZebraBTPrinterModule extends ReactContextBaseJavaModule {
                 Log.d(TAG, "Connection reopened");
             }
 
-            String cpclConfigLabel = "! 0 200 200 799 1\r\nPW 639\r\nTONE 0\r\nSPEED 5\r\nON-FEED IGNORE\r\nNO-PACE\r\nPOSTFEED 40\r\nJOURNAL\r\nL 0 590 640 590 3\r\nL 0 311 640 311 3\r\nL 202 592 202 764 3\r\nB QR 190 18 M 2 U 20\r\nMA," + qrcode + "\r\nENDQR\r\nSCALE-TEXT ARIAL.TTF 15 15 130 245 "+ qrcode + "\r\nB 128 1 30 120 95 363 " + trackGen + "\r\nSCALE-TEXT ARIAL.TTF 15 15 70 520 " + trackGen + "\r\nSCALE-TEXT ARIAL.TTF 12 12 220 610 " + date + "\r\nSCALE-TEXT ARIAL.TTF 20 20 220 660 " + userCode + "/EK\r\nPCX 15 610 !<NINJA_CG.PCX\r\nCOUNTRY CP874\r\nENCODING UTF-8\r\nSCALE-TEXT ANGSA.TTF 10 10 220 730 กรุณาพิมพ์ใบปะหน้าพัสดุนี้และติดบนกล่องพัสดุ\r\nPRINT\r\n";
+            String cpclConfigLabel = "! 0 200 200 799 1\r\nPW 639\r\nTONE 0\r\nSPEED 5\r\nON-FEED IGNORE\r\nNO-PACE\r\nPOSTFEED 40\r\nJOURNAL\r\nL 0 590 640 590 3\r\nL 0 311 640 311 3\r\nL 202 592 202 764 3\r\nB QR 200 60 M 2 U 9\r\nMA," + qrcode + "\r\nENDQR\r\nSCALE-TEXT ARIAL.TTF 15 15 130 245 "+ qrcode + "\r\nB 128 1 30 120 95 363 " + trackGen + "\r\nSCALE-TEXT ARIAL.TTF 15 15 70 520 " + trackGen + "\r\nSCALE-TEXT ARIAL.TTF 12 12 220 610 " + date + "\r\nSCALE-TEXT ARIAL.TTF 20 20 220 660 " + userCode + "/EK\r\nPCX 15 610 !<NINJA_CG.PCX\r\nCOUNTRY CP874\r\nENCODING UTF-8\r\nSCALE-TEXT ANGSA.TTF 10 10 220 730 กรุณาพิมพ์ใบปะหน้าพัสดุนี้และติดบนกล่องพัสดุ\r\nPRINT\r\n";
 
             byte[]  configLabel = cpclConfigLabel.getBytes();
 
